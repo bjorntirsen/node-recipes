@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Björns😋recept!</title>
+  <script defer type="text/javascript" src="../public/scripts/script.js"></script>
+</head>
+<body>
+  <h1>Välkommen till Björns😋recept!</h1>
+  <h2>Lägg till ett nytt recept:</h2>
+  <form method="post" action="/">
+    <p>Receptnamn:</p>
+    <input type="text" name="name" >
+    <p>För hur många personer:</p>
+    <input type="number" name="for" min="1" max="16" >
+    <p>Tillagningstid i minuter:</p>
+    <input type="number" name="for" min="1" max="360" >
+    <p>Anvisningar:</p>
+    <textarea name="method" rows="8" cols="40"></textarea>
+    <p>Ingredienser</p>
+    <table id="ing_table">
+      <tr>
+        <th>namn</th>
+        <th>mängd</th>
+        <th>enhet</th>
+      </tr>
+    </table>
+    <input type="button" value="+" onclick="addRow()"><br><br>
+    <input type="submit" value="Ladda upp">
+  </form>
+</body>
+</html>
